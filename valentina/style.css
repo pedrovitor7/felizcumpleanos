@@ -1,0 +1,58 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Pacifico', cursive;
+    background: linear-gradient(135deg, #ffe0f0, #ffc6d0);
+    color: #5c003c;
+    overflow: hidden;
+  }
+  
+  .container {
+    position: relative;
+    background-color: #fff0f5;
+    padding: 30px;
+    margin: 5% auto;
+    border-radius: 30px;
+    box-shadow: 0 0 30px rgba(255, 105, 180, 0.5);
+    max-width: 600px;
+    text-align: center;
+    z-index: 1;
+  }
+  
+  .cake {
+    width: 180px;
+    margin: 20px 0;
+  }
+  
+  .firma {
+    margin-top: 25px;
+    font-style: italic;
+  }
+  
+  /* Corações animados */
+  .hearts::before,
+  .hearts::after {
+    content: "💕 💖 💘 💝 💞";
+    font-size: 40px;
+    position: absolute;
+    width: 100%;
+    text-align: center;
+    top: 10px;
+    animation: hearts 5s infinite linear alternate;
+    opacity: 0.4;
+  }
+  
+  .hearts::after {
+    top: 100px;
+    animation-delay: 2.5s;
+  }
+  
+  @keyframes hearts {
+    0% {
+      transform: translateY(0);
+    }
+    100% {
+      transform: translateY(20px);
+    }
+  }
+  
